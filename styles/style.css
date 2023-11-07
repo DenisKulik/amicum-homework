@@ -116,7 +116,7 @@ a {
 .home__info {
   flex: 1;
   padding-top: 70px;
-  background-image: url("../img/home.png");
+  background-image: url("../../../img/home.png");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 44%;
@@ -295,7 +295,7 @@ a {
 /* contacts-top */
 .contacts-top {
   min-height: 250px;
-  background: url("../img/contact-bg.png") center bottom no-repeat;
+  background: url("../../../img/contact-bg.png") center bottom no-repeat;
   background-size: cover;
 }
 .contacts-top__container {
