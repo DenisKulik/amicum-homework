@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eShop</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <input v-model="searchValue" type="text" class="goods-search" />
+      <button @click="filterGoods" class="search-button" type="button">Искать
+      </button>
+      <button @click="showCart" class="cart-button" type="button">Корзина</button>
+    </header>
+
+    <main>
+      <div class="goods-list">
+        <div v-if="!filteredGoods.length">Нет данных</div>
+        <div v-else class="goods-list">
+          <div class="goods-item"
+               v-for="good in filteredGoods"
+               :key="good.id_product"
+          >
+            <h3>{{ good.product_name }}</h3>
+            <p>{{ good.price }}</p>
+            <button @click="addToCart(good)" class="buy-button" type="button">
+              В корзину
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cart" v-if="isVisibleCart">
+        <h2>Корзина</h2>
+        <div v-for="item in cartItems" :key="item.title" class="cart-item">
+          <h3>{{ item.product_name }}</h3>
+          <p>{{ item.price }}</p>
+        </div>
+        <p>Total Price: {{ getTotalCartPrice() }}</p>
+      </div>
+    </main>
+
+    <footer>
+      <form id="feedback-form" @submit.prevent="submitForm">
+        <div>
+          <label for="name">Имя:</label>
+          <input v-model="name" type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="phone">Телефон:</label>
+          <input v-model="phone" type="tel" id="phone" name="phone" required />
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input v-model="email" type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="text">Текст:</label>
+          <textarea id="text" v-model="textarea" name="text"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </footer>
+  </div>
+</body>
+
+</html>
