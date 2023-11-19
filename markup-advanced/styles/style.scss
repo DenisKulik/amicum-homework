@@ -358,6 +358,33 @@ input {
 
 /* footer */
 .footer {
+  padding: 30px 0;
+  color: #fff;
+  background-color: #222224;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+
+    &__item {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: #fff;
+    }
+  }
 }
 
 .copy {
