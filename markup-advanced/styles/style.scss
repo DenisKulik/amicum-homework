@@ -24,6 +24,10 @@ a {
   text-align: center;
 }
 
+input {
+  all: unset;
+}
+
 .container {
   max-width: 1140px;
   height: 100%;
@@ -187,7 +191,7 @@ a {
     width: 31%;
 
     &:first-child &-img {
-        background: url('../img/fetured-1.jpg') no-repeat center center/cover;
+      background: url('../img/fetured-1.jpg') no-repeat center center/cover;
     }
 
     &:nth-child(2) &-img {
@@ -281,6 +285,74 @@ a {
     text-align: center;
     font-size: 13.972px;
     font-weight: 300;
+  }
+}
+
+/* subscribe */
+.subscribe {
+  padding: 100px 0;
+  background: url('../img/subscribe-bg.png') no-repeat center center/cover;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__recommendation {
+    max-width: 360px;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    color: #222224;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 167.2%;
+  }
+
+  &__description {
+    margin-bottom: 32px;
+    color: #222224;
+    font-size: 18px;
+    line-height: 167.2%;
+  }
+
+  &__form-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    width: 322px;
+    height: 49px;
+    padding: 7px 22px;
+    color: #222224;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-color: #E1E1E1;
+  }
+
+  &__button {
+    height: 49px;
+    margin-left: -30px;
+    padding: 0 7px;
+    color: #fff;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #E05C6E;
   }
 }
 
