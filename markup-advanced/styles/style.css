@@ -208,6 +208,36 @@ a {
   background-color: #F16D7F;
 }
 
+/* suggestions */
+.suggestions {
+  padding: 104px 0;
+  background-color: #222224;
+}
+.suggestions__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.suggestions__item {
+  width: 31%;
+  color: #fff;
+  text-align: center;
+}
+.suggestions__img {
+  margin-bottom: 28px;
+}
+.suggestions__title {
+  margin-bottom: 16px;
+  color: #FBFBFB;
+  font-size: 19.96px;
+}
+.suggestions__description {
+  color: #FBFBFB;
+  text-align: center;
+  font-size: 13.972px;
+  font-weight: 300;
+}
+
 /* footer */
 /* media */
 @media screen and (max-width: 1024px) {

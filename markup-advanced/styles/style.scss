@@ -249,6 +249,41 @@ a {
   }
 }
 
+/* suggestions */
+.suggestions {
+  padding: 104px 0;
+  background-color: #222224;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    width: 31%;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 28px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    color: #FBFBFB;
+    font-size: 19.96px;
+  }
+
+  &__description {
+    color: #FBFBFB;
+    text-align: center;
+    font-size: 13.972px;
+    font-weight: 300;
+  }
+}
+
 /* footer */
 .footer {
 }
