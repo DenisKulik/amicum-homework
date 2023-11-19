@@ -167,6 +167,88 @@ a {
   }
 }
 
+/* fetured */
+.fetured {
+  padding-bottom: 95px;
+
+  &__container {
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 48px;
+  }
+
+  &__card {
+    width: 31%;
+
+    &:first-child &-img {
+        background: url('../img/fetured-1.jpg') no-repeat center center/cover;
+    }
+
+    &:nth-child(2) &-img {
+      background: url('../img/fetured-2.jpg') no-repeat center center/cover;
+    }
+
+    &:nth-child(3) &-img {
+      background: url('../img/fetured-3.jpg') no-repeat center center/cover;
+    }
+
+    &:nth-child(4) &-img {
+      background: url('../img/fetured-4.jpg') no-repeat center center/cover;
+    }
+
+    &:nth-child(5) &-img {
+      background: url('../img/fetured-5.jpg') no-repeat center center/cover;
+    }
+
+    &:last-child &-img {
+      background: url('../img/fetured-6.jpg') no-repeat center center/cover;
+    }
+  }
+
+  &__card-img {
+    height: 420px;
+  }
+
+  &__card-inner {
+    padding: 20px;
+    background-color: #F8F8F8;
+  }
+
+  &__card-title {
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &__card-description {
+    margin-bottom: 18px;
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__card-price {
+    color: #F16D7F;
+    font-size: 16px;
+  }
+
+  &__link-wrapper {
+    text-align: center;
+  }
+
+  &__link {
+    padding: 15px 40px;
+    color: #fff;
+    background-color: #F16D7F;
+  }
+}
+
 /* footer */
 .footer {
 }

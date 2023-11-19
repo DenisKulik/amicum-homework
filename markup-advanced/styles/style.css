@@ -144,6 +144,70 @@ a {
   background: url("../img/info-4.jpg") no-repeat center center/cover;
 }
 
+/* fetured */
+.fetured {
+  padding-bottom: 95px;
+}
+.fetured__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 48px;
+}
+.fetured__card {
+  width: 31%;
+}
+.fetured__card:first-child .fetured__card-img {
+  background: url("../img/fetured-1.jpg") no-repeat center center/cover;
+}
+.fetured__card:nth-child(2) .fetured__card-img {
+  background: url("../img/fetured-2.jpg") no-repeat center center/cover;
+}
+.fetured__card:nth-child(3) .fetured__card-img {
+  background: url("../img/fetured-3.jpg") no-repeat center center/cover;
+}
+.fetured__card:nth-child(4) .fetured__card-img {
+  background: url("../img/fetured-4.jpg") no-repeat center center/cover;
+}
+.fetured__card:nth-child(5) .fetured__card-img {
+  background: url("../img/fetured-5.jpg") no-repeat center center/cover;
+}
+.fetured__card:last-child .fetured__card-img {
+  background: url("../img/fetured-6.jpg") no-repeat center center/cover;
+}
+.fetured__card-img {
+  height: 420px;
+}
+.fetured__card-inner {
+  padding: 20px;
+  background-color: #F8F8F8;
+}
+.fetured__card-title {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.fetured__card-description {
+  margin-bottom: 18px;
+  color: #5D5D5D;
+  font-size: 14px;
+  font-weight: 300;
+}
+.fetured__card-price {
+  color: #F16D7F;
+  font-size: 16px;
+}
+.fetured__link-wrapper {
+  text-align: center;
+}
+.fetured__link {
+  padding: 15px 40px;
+  color: #fff;
+  background-color: #F16D7F;
+}
+
 /* footer */
 /* media */
 @media screen and (max-width: 1024px) {
