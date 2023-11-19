@@ -58,6 +58,7 @@ a {
   background-color: #F1E4E6;
 
   &__container {
+    height: 764px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,10 +66,10 @@ a {
   }
 
   &__img {
-    display: block;
+    width: 40%;
     height: 100%;
     align-self: flex-end;
-    object-fit: contain;
+    background: url('../img/home.png') no-repeat bottom center/contain;
   }
 
   &__text {
@@ -102,6 +103,67 @@ a {
     & > span {
       color: #F16D7F;
     }
+  }
+}
+
+/* info */
+.info {
+  padding: 65px 0 96px 0;
+
+  &__container {
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__card {
+    width: 33%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &:first-child {
+      background: url('../img/info-1.jpg') no-repeat center center/cover;
+    }
+
+    &:nth-child(2) {
+      background: url('../img/info-2.jpg') no-repeat center center/cover;
+    }
+
+    &:last-child {
+      background: url('../img/info-3.jpg') no-repeat center center/cover;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 8px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__card-subtitle {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__card-bottom {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('../img/info-4.jpg') no-repeat center center/cover;
   }
 }
 
