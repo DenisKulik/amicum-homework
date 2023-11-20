@@ -51,7 +51,7 @@ input {
     gap: 40px;
   }
 
-  &__right {
+  &__nav > ul {
     display: flex;
     gap: 25px;
   }
@@ -210,8 +210,20 @@ input {
       background: url('../img/fetured-5.jpg') no-repeat center center/cover;
     }
 
-    &:last-child &-img {
+    &:nth-child(6) &-img {
       background: url('../img/fetured-6.jpg') no-repeat center center/cover;
+    }
+
+    &:nth-child(7) &-img {
+      background: url('../img/fetured-7.jpg') no-repeat center center/cover;
+    }
+
+    &:nth-child(8) &-img {
+      background: url('../img/fetured-8.jpg') no-repeat center center/cover;
+    }
+
+    &:nth-child(9) &-img {
+      background: url('../img/fetured-9.jpg') no-repeat center center/cover;
     }
   }
 
@@ -250,6 +262,32 @@ input {
     padding: 15px 40px;
     color: #fff;
     background-color: #F16D7F;
+  }
+
+  .pages {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #EBEBEB;
+
+    & > ul {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      & > li {
+        color: #C4C4C4;
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      & > li:first-child {
+        color: #EF5B70;
+      }
+    }
   }
 }
 
@@ -387,7 +425,67 @@ input {
   }
 }
 
-.copy {
+/* arrivals */
+.arrivals {
+  height: 148px;
+  background-color: #F8F3F4;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: #F16D7F;
+    font-size: 24px;
+  }
+
+  &__breadcrumbs {
+    color: #636363;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    & > span {
+      color: #F16D7F;
+      font-weight: 700;
+    }
+  }
+}
+
+/* filter */
+.filter {
+  padding-top: 50px;
+  padding-bottom: 64px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6F6E6E;
+    font-size: 14px;
+  }
 }
 
 /* media */

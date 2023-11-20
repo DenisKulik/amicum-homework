@@ -13,11 +13,19 @@
         <img src="img/logo.svg" alt="logo"/>
         <img src="img/search.svg" alt="search"/>
       </div>
-      <div class="header__right">
-        <img src="img/burger.svg" alt="burger"/>
-        <img src="img/user.svg" alt="user"/>
-        <img src="img/cart.svg" alt="cart"/>
-      </div>
+      <nav class="header__nav">
+          <ul>
+              <li>
+                  <a href="#"><img src="img/burger.svg" alt="burger"/></a>
+              </li>
+              <li>
+                  <a href="#"><img src="img/user.svg" alt="user"/></a>
+              </li>
+              <li>
+                  <a href=""><img src="img/cart.svg" alt="cart"/></a>
+              </li>
+          </ul>
+      </nav>
     </div>
   </header>
 
@@ -109,7 +117,7 @@
           </div>
         </div>
         <div class="fetured__link-wrapper">
-          <a class="fetured__link" href="#">Browse All Product</a>
+          <a class="fetured__link" href="pages/catalog.html">Browse All Product</a>
         </div>
       </div>
     </section>
@@ -143,8 +151,8 @@
         <div class="subscribe__form">
           <h3 class="subscribe__title">Subscribe</h3>
           <p class="subscribe__description">FOR OUR NEWLETTER AND PROMOTION</p>
-          <form class="subscribe__form-wrapper">
-            <input class="subscribe__input" type="email" placeholder="Enter Your Email"/>
+          <form action="#" class="subscribe__form-wrapper">
+            <input class="subscribe__input" type="email" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
             <button class="subscribe__button" type="submit">Subscribe</button>
           </form>
         </div>
