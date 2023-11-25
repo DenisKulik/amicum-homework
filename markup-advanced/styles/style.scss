@@ -132,6 +132,7 @@ input {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: transform 0.2s ease-out;
 
     &:first-child {
       background: url('../img/info-1.jpg') no-repeat center center/cover;
@@ -143,6 +144,10 @@ input {
 
     &:last-child {
       background: url('../img/info-3.jpg') no-repeat center center/cover;
+    }
+
+    &:hover {
+      transform: scale(1.03);
     }
   }
 
@@ -168,6 +173,11 @@ input {
     justify-content: center;
     flex-direction: column;
     background: url('../img/info-4.jpg') no-repeat center center/cover;
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
 
@@ -189,6 +199,7 @@ input {
 
   &__card {
     width: 31%;
+    transition: transform 0.2s ease-out;
 
     &:first-child &-img {
       background: url('../img/fetured-1.jpg') no-repeat center center/cover;
@@ -224,6 +235,10 @@ input {
 
     &:nth-child(9) &-img {
       background: url('../img/fetured-9.jpg') no-repeat center center/cover;
+    }
+
+    &:hover {
+      transform: scale(1.03);
     }
   }
 
@@ -306,10 +321,15 @@ input {
     width: 31%;
     color: #fff;
     text-align: center;
+
+    &:hover .suggestions__img {
+      transform: rotate(360deg);
+    }
   }
 
   &__img {
     margin-bottom: 28px;
+    transition: transform 0.2s ease-out;
   }
 
   &__title {

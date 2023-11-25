@@ -116,6 +116,7 @@ input {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: transform 0.2s ease-out;
 }
 .info__card:first-child {
   background: url("../img/info-1.jpg") no-repeat center center/cover;
@@ -125,6 +126,9 @@ input {
 }
 .info__card:last-child {
   background: url("../img/info-3.jpg") no-repeat center center/cover;
+}
+.info__card:hover {
+  transform: scale(1.03);
 }
 .info__card-title {
   margin-bottom: 8px;
@@ -146,6 +150,10 @@ input {
   justify-content: center;
   flex-direction: column;
   background: url("../img/info-4.jpg") no-repeat center center/cover;
+  transition: transform 0.2s ease-out;
+}
+.info__card-bottom:hover {
+  transform: scale(1.03);
 }
 
 /* fetured */
@@ -162,6 +170,7 @@ input {
 }
 .fetured__card {
   width: 31%;
+  transition: transform 0.2s ease-out;
 }
 .fetured__card:first-child .fetured__card-img {
   background: url("../img/fetured-1.jpg") no-repeat center center/cover;
@@ -189,6 +198,9 @@ input {
 }
 .fetured__card:nth-child(9) .fetured__card-img {
   background: url("../img/fetured-9.jpg") no-repeat center center/cover;
+}
+.fetured__card:hover {
+  transform: scale(1.03);
 }
 .fetured__card-img {
   height: 420px;
@@ -258,8 +270,12 @@ input {
   color: #fff;
   text-align: center;
 }
+.suggestions__item:hover .suggestions__img {
+  transform: rotate(360deg);
+}
 .suggestions__img {
   margin-bottom: 28px;
+  transition: transform 0.2s ease-out;
 }
 .suggestions__title {
   margin-bottom: 16px;
