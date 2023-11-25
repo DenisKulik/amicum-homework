@@ -315,6 +315,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
   }
 
   &__item {
@@ -882,11 +883,81 @@ input {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .home {
+    &__container {
+      height: 368px;
+    }
+
+    &__title {
+      font-size: 44px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
+
+  .fetured {
+    &__card {
+      width: 47%;
+    }
+  }
+
+  .suggestions {
+    &__container {
+      flex-direction: column;
+    }
+  }
+
+  .subscribe {
+    &__container {
+      flex-direction: column;
+    }
+  }
 }
 
 @media screen and (max-width: 667px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .header {
+    &__nav {
+      li:not(:first-child) {
+          display: none;
+      }
+    }
+  }
+
+  .home {
+    &__img {
+      display: none;
+    }
+
+    &__title {
+      font-size: 38px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+
+  .info {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__card {
+      width: 100%;
+    }
+  }
+
+  .fetured {
+    &__card {
+      width: 100%;
+    }
   }
 }
