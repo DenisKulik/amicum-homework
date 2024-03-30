@@ -1,5 +1,31 @@
+/* common */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .h1-heading {
@@ -47,4 +73,60 @@ html {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+/* header */
+.header {
+    padding-top: 37px;
+    padding-bottom: 47px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* home */
+.home .h1-heading {
+    max-width: 510px;
+}
+
+.home .paragraph {
+    max-width: 425px;
+}
+
+/* what-we-do */
+.what-we-do .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.what-we-do .card {
+    max-width: 359px;
+    width: 100%;
+}
+
+/* map */
+.contacts-map__content {
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    padding-top: 91px;
+    padding-bottom: 64px;
+}
+
+.footer__text .h3-heading {
+    max-width: 340px;
+    width: 100%;
+    text-align: left;
+}
+
+.footer__text .paragraph {
+    max-width: 495px;
+    width: 100%;
+    text-align: left;
 }

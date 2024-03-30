@@ -8,27 +8,31 @@
 <body>
 <!-- Header -->
 <header class="header">
-	<nav class="nav">
-		<ul class="nav__list">
-			<li class="nav__item">
-				<a href="../index.html">Home</a>
-			</li>
-			<li class="nav__item">
-				<a href="#">Contacts</a>
-			</li>
-		</ul>
-	</nav>
+	<div class="container">
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a href="../index.html">Home</a>
+				</li>
+				<li class="nav__item">
+					<a href="#">Contacts</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </header>
 <!-- Main Content -->
 <main>
 	<section class="contacts-home">
-		<h2 class="h2-heading">Contact Us</h2>
-		<p class="paragraph">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-			magna aliqua.
-		</p>
+		<div class="container">
+			<h2 class="h2-heading">Contact Us</h2>
+			<p class="paragraph">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+				magna aliqua.
+			</p>
+		</div>
 	</section>
-	<section class="contacts-info">
+	<section class="contacts-info container">
 		<div class="contacts-info__left">
 			<img src="../img/logo.png" alt="logo" width="240">
 			<h4 class="h4-heading">Address</h4>
@@ -57,29 +61,36 @@
 		</div>
 		<h4 class="h4-heading">Send us message</h4>
 	</section>
-	<!-- Yandex map -->
-	<section class="contscts-map">
-		<iframe
-			src="https://yandex.ru/map-widget/v1/?um=constructor%3A785a4d634b7f24c9bfba4e5bd1710e1f4244db438e546686e1b216e16a862ca2&amp;source=constructor"
-			width="517" height="424" frameborder="0"></iframe>
+	<!-- Map -->
+	<section class="contacts-map">
+		<div class="container">
+				<iframe
+					src="https://yandex.ru/map-widget/v1/?um=constructor%3A785a4d634b7f24c9bfba4e5bd1710e1f4244db438e546686e1b216e16a862ca2&amp;source=constructor"
+					width="100%" height="480" frameborder="0"></iframe>
+		</div>
 	</section>
 </main>
 <!-- Footer -->
 <footer class="footer">
-	<div class="footer__content">
-		<h3>Intersted to work with our team?</h3>
-		<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida velit id nisi commodo.</p>
-		<button class="button-secondary">Let’s Talk</button>
-	</div>
-	<hr>
-	<div class="footer__contacts">
-		<h4 class="h4-heading">Contact List</h4>
-		<ul class="footer__list">
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-			<li>+7-812-7313-4321</li>
-			<li>hello.site@gmail.com</li>
-		</ul>
-		<span>2024 All rights reserved.</span>
+	<div class="container">
+		<div class="footer__content">
+			<div class="footer__text">
+				<h3 class="h3-heading">Intersted to work with our team?</h3>
+				<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida velit id nisi
+					commodo.</p>
+			</div>
+			<button class="button-secondary">Let’s Talk</button>
+		</div>
+		<hr>
+		<div class="footer__contacts">
+			<h4 class="h4-heading">Contact List</h4>
+			<ul class="footer__list">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+				<li>+7-812-7313-4321</li>
+				<li>hello.site@gmail.com</li>
+			</ul>
+			<span>2024 All rights reserved.</span>
+		</div>
 	</div>
 </footer>
 </body>
