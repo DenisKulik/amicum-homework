@@ -7,57 +7,80 @@
 </head>
 <body>
 <!-- Header -->
-<header>
-	<nav>
-		<ul>
-			<li><a href="../index.html">Home</a></li>
-			<li><a href="#">Contacts</a></li>
+<header class="header">
+	<nav class="nav">
+		<ul class="nav__list">
+			<li class="nav__item">
+				<a href="../index.html">Home</a>
+			</li>
+			<li class="nav__item">
+				<a href="#">Contacts</a>
+			</li>
 		</ul>
 	</nav>
 </header>
 <!-- Main Content -->
 <main>
-	<h2 class="h2-heading">Contact Us</h2>
-	<p class="paragraph">Lorem ipsum dolor.</p>
-	<img src="../img/logo.png" alt="logo" width="240">
-	<h4 class="h4-heading">Address</h4>
-	<p class="paragraph">Kemerovo, Russia</p>
-	<h4 class="h4-heading">Phone</h4>
-	<ul>
-		<li>123-456-7890</li>
-		<li>987-654-3210</li>
-	</ul>
-	<h4 class="h4-heading">Online service</h4>
-	<ul>
-		<li><a href="#">example.com</a></li>
-		<li><a href="#">test@example.com</a></li>
-	</ul>
-	<h4 class="h4-heading">Send us message</h4>
-	<form>
-		<label for="fullname">Full Name</label><br>
-		<input class="input-field" type="text" id="fullname" name="fullname"><br><br>
-		<label for="email">Email</label><br>
-		<input class="input-field" type="email" id="email" name="email"><br><br>
-		<label for="message">Message</label><br>
-		<textarea class="input-field" id="message" name="message" rows="4" cols="50"></textarea><br><br>
-		<input class="submit-button" type="submit" value="Submit">
-	</form>
+	<section class="contacts-home">
+		<h2 class="h2-heading">Contact Us</h2>
+		<p class="paragraph">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua.
+		</p>
+	</section>
+	<section class="contacts-info">
+		<div class="contacts-info__left">
+			<img src="../img/logo.png" alt="logo" width="240">
+			<h4 class="h4-heading">Address</h4>
+			<p class="paragraph">Kemerovo, Russia</p>
+			<h4 class="h4-heading">Phone</h4>
+			<ul>
+				<li>123-456-7890</li>
+				<li>987-654-3210</li>
+			</ul>
+			<h4 class="h4-heading">Online service</h4>
+			<ul>
+				<li><a href="#">example.com</a></li>
+				<li><a href="#">test@example.com</a></li>
+			</ul>
+		</div>
+		<div class="contacts-info__right">
+			<form>
+				<label for="fullname">Full Name</label><br>
+				<input class="input-field" type="text" id="fullname" name="fullname"><br><br>
+				<label for="email">Email</label><br>
+				<input class="input-field" type="email" id="email" name="email"><br><br>
+				<label for="message">Message</label><br>
+				<textarea class="input-field" id="message" name="message" rows="4" cols="50"></textarea><br><br>
+				<input class="submit-button" type="submit" value="Submit">
+			</form>
+		</div>
+		<h4 class="h4-heading">Send us message</h4>
+	</section>
 	<!-- Yandex map -->
-	<iframe
+	<section class="contscts-map">
+		<iframe
 			src="https://yandex.ru/map-widget/v1/?um=constructor%3A785a4d634b7f24c9bfba4e5bd1710e1f4244db438e546686e1b216e16a862ca2&amp;source=constructor"
 			width="517" height="424" frameborder="0"></iframe>
+	</section>
 </main>
 <!-- Footer -->
-<footer>
-	<h3 class="h3-heading">Contact Us</h3>
-	<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<footer class="footer">
+	<div class="footer__content">
+		<h3>Intersted to work with our team?</h3>
+		<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida velit id nisi commodo.</p>
+		<button class="button-secondary">Let’s Talk</button>
+	</div>
 	<hr>
-	<h4 class="h4-heading">Contact List</h4>
-	<ul>
-		<li>Random text - 123-456-7890 - example@example.com</li>
-		<li>Another text - 987-654-3210 - test@example.com</li>
-	</ul>
-	<span>All rights reserved.</span>
+	<div class="footer__contacts">
+		<h4 class="h4-heading">Contact List</h4>
+		<ul class="footer__list">
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+			<li>+7-812-7313-4321</li>
+			<li>hello.site@gmail.com</li>
+		</ul>
+		<span>2024 All rights reserved.</span>
+	</div>
 </footer>
 </body>
 </html>
