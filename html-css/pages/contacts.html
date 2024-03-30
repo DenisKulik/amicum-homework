@@ -35,32 +35,44 @@
 	</section>
 	<section class="contacts-info container">
 		<div class="contacts-info__left">
-			<img src="../img/logo.png" alt="logo" width="240">
-			<h4 class="h4-heading">Address</h4>
+			<img src="../img/contacts-info.svg" alt="logo" width="300">
+			<h4 class="h4-heading">ADDRESS</h4>
 			<p class="paragraph">Kemerovo, Russia</p>
-			<h4 class="h4-heading">Phone</h4>
+			<h4 class="h4-heading">PHONE</h4>
 			<ul>
-				<li>123-456-7890</li>
-				<li>987-654-3210</li>
+				<li class="contacts-info__item">
+					<img src="../img/phone.svg" alt="phone">
+					<span>+7-812-7313-4321</span>
+				</li>
+				<li class="contacts-info__item">
+					<img src="../img/phone.svg" alt="phone">
+					<span>+7-817-0000-1234</span>
+				</li>
 			</ul>
-			<h4 class="h4-heading">Online service</h4>
+			<h4 class="h4-heading">ONLINE SERVICE</h4>
 			<ul>
-				<li><a href="#">example.com</a></li>
-				<li><a href="#">test@example.com</a></li>
+				<li class="contacts-info__item">
+					<img src="../img/site.svg" alt="phone">
+					<a href="#">www.site.com</a>
+				</li>
+				<li class="contacts-info__item">
+					<img src="../img/mail.svg" alt="phone">
+					<a href="#">hello.site@gmail.com</a>
+				</li>
 			</ul>
 		</div>
 		<div class="contacts-info__right">
+			<h4 class="h4-heading">SEND US MESSAGE</h4>
 			<form>
-				<label for="fullname">Full Name</label><br>
-				<input class="input-field" type="text" id="fullname" name="fullname"><br><br>
-				<label for="email">Email</label><br>
-				<input class="input-field" type="email" id="email" name="email"><br><br>
-				<label for="message">Message</label><br>
-				<textarea class="input-field" id="message" name="message" rows="4" cols="50"></textarea><br><br>
-				<input class="submit-button" type="submit" value="Submit">
+				<label class="form-label" for="fullname">Full Name</label><br>
+				<input class="input-field" type="text" id="fullname" name="fullname" placeholder="Your Name">
+				<label class="form-label" for="email">Email</label>
+				<input class="input-field" type="email" id="email" name="email" placeholder="Your Email">
+				<label class="form-label" for="message">Message</label>
+				<textarea class="input-field" id="message" name="message" rows="4" cols="50" placeholder="Your Message"></textarea>
+				<input class="button-primary" type="submit" value="Submit">
 			</form>
 		</div>
-		<h4 class="h4-heading">Send us message</h4>
 	</section>
 	<!-- Map -->
 	<section class="contacts-map">
