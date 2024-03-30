@@ -12,10 +12,10 @@
 		<nav class="nav">
 			<ul class="nav__list">
 				<li class="nav__item">
-					<a href="#">Home</a>
+					<a href="#"><img src="./img/home.svg" alt="home"></a>
 				</li>
 				<li class="nav__item">
-					<a href="./pages/contacts.html">Contacts</a>
+					<a href="./pages/contacts.html"><img src="./img/contacts.svg" alt="home"></a>
 				</li>
 			</ul>
 		</nav>
@@ -25,47 +25,76 @@
 <main class="main">
 	<section class="home">
 		<div class="container">
-			<h1 class="h1-heading">New Automation Tool for Your </h1>
-			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<button class="button-primary">See Our Project</button>
+			<div class="home-content">
+				<h1 class="h1-heading">New Automation Tool for Your </h1>
+				<p class="paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate
+					ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
+				</p>
+				<button class="button-primary">See Our Project</button>
+			</div>
+			<div class="home-bg"></div>
 		</div>
 	</section>
 	<section class="what-we-do container">
 		<h3 class="h3-heading">What we do to help our client grow in digital era</h3>
 		<div class="cards">
 			<div class="card">
+				<div class="card__img"><img src="./img/card-1.svg" alt="card-1"></div>
 				<h4 class="h4-heading">Make Your business To Be Better Famous In Internet</h4>
 				<p class="paragraph">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					magna aliqua.
 				</p>
-				<button class="card__link"><a href="#">Learn more</a></button>
+				<button class="card__link">
+					<a href="#">Learn more</a>
+					<img src="./img/arrow.svg" alt="arrow"/>
+				</button>
 			</div>
 			<div class="card">
+				<div class="card__img"><img src="./img/card-2.svg" alt="card-1"></div>
 				<h4 class="h4-heading">Bring Technology To Your Comfrotable Home</h4>
 				<p class="paragraph">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					magna aliqua.
 				</p>
-				<button class="card__link"><a href="#">Learn more</a></button>
+				<button class="card__link">
+					<a href="#">Learn more</a>
+					<img src="./img/arrow.svg" alt="arrow"/>
+				</button>
 			</div>
 			<div class="card">
+				<div class="card__img"><img src="./img/card-3.svg" alt="card-1"></div>
 				<h4 class="h4-heading">Build Your Digital Product That Suitable For Your Need</h4>
 				<p class="paragraph">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					magna aliqua.
 				</p>
-				<button class="card__link"><a href="#">Learn more</a></button>
+				<button class="card__link">
+					<a href="#">Learn more</a>
+					<img src="./img/arrow.svg" alt="arrow"/>
+				</button>
 			</div>
 		</div>
 	</section>
 	<section class="projects container">
 		<h3 class="h3-heading">Our Finished Project</h3>
-		<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida velit id nisi commodo.</p>
+		<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 		<div class="projects__list">
-			<div class="projects__item-top"></div>
+			<div class="projects__item-top">
+				<img src="./img/project-1.png" alt="project-1">
+				<span>Smart Home Installation</span>
+			</div>
 			<div class="projects__items-bottom">
-				<div class="projects__item"></div>
+				<div class="projects__item">
+					<img src="./img/project-2.png" alt="project-1">
+					<span>Sparklite App</span>
+				</div>
+				<div class="projects__item">
+					<img src="./img/project-3.png" alt="project-1">
+					<span>Car-Rapetition App</span>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -82,13 +111,21 @@
 			</div>
 			<hr>
 			<div class="footer__contacts">
-				<h4 class="h4-heading">Contact List</h4>
 				<ul class="footer__list">
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-					<li>+7-812-7313-4321</li>
-					<li>hello.site@gmail.com</li>
+					<li class="footer__item">
+						<span class="contact-number">1.</span>
+						<span class="contact-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+					</li>
+					<li class="footer__item">
+						<span class="contact-number">2.</span>
+						<span class="contact-item">+7-812-7313-4321</span>
+					</li>
+					<li class="footer__item">
+						<span class="contact-number">3.</span>
+						<span class="contact-item">hello.site@gmail.com.</span>
+					</li>
 				</ul>
-				<span>2024 All rights reserved.</span>
+				<span class="footer__copyright">2024 All rights reserved.</span>
 			</div>
 		</div>
 	</footer>

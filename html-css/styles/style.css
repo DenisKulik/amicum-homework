@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -26,11 +26,15 @@ button {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .h1-heading {
     font-size: 64px;
     color: #1F3F68;
+    font-weight: 300;
+    line-height: 116%;
+    letter-spacing: 0.04em;
 }
 
 .h2-heading {
@@ -42,12 +46,18 @@ button {
 .h3-heading {
     font-size: 36px;
     text-align: center;
+    font-weight: 300;
+    line-height: 128%;
+    letter-spacing: 0.05em;
+    color: #000;
 }
 
 .h4-heading {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
+    font-weight: 400;
+    letter-spacing: 0.05em;
 }
 
 .paragraph {
@@ -61,6 +71,32 @@ button {
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
+}
+
+.button-primary {
+    border-radius: 10px;
+    width: 220px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 5px 10px 20px 0 rgba(53, 110, 173, 0.2);
+    background: #5a98d0;
+}
+
+.button-secondary {
+    width: 236px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    background: #5a98d0;
 }
 
 .submit-button {
@@ -88,15 +124,53 @@ button {
 }
 
 /* home */
+.home {
+    padding-top: 60px;
+    padding-bottom: 190px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, #ebf3fb 28.39%, #fff 100%);
+}
+
+.home .container {
+    position: relative;
+}
+
+.home .home-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 554px;
+    height: 482px;
+    background: url('../img/home.png') right bottom no-repeat;
+    background-size: contain;
+}
+
 .home .h1-heading {
     max-width: 510px;
+    margin-bottom: 32px;
 }
 
 .home .paragraph {
     max-width: 425px;
+    margin-bottom: 71px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    opacity: 0.6;
+    letter-spacing: 0.05em;
+    color: #1f3f68;
 }
 
 /* what-we-do */
+.what-we-do {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.what-we-do .h3-heading {
+    margin-bottom: 64px;
+}
+
 .what-we-do .cards {
     display: flex;
     justify-content: space-between;
@@ -105,7 +179,103 @@ button {
 
 .what-we-do .card {
     max-width: 359px;
+    position: relative;
     width: 100%;
+    padding: 216px 32px 32px;
+    box-shadow: 5px 20px 50px 0 rgba(16, 112, 177, 0.2);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.what-we-do .card__img {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card .h4-heading {
+    margin-bottom: 14px;
+}
+
+.card .paragraph {
+    margin-bottom: 30px;
+    line-height: 162%;
+    letter-spacing: 0.05em;
+    color: #1f3f68;
+    opacity: 0.6;
+}
+
+.card__link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card__link > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    letter-spacing: 0.05em;
+    color: #5a98d0;
+    text-decoration: none;
+}
+
+/* projects */
+.projects .h3-heading {
+    margin-bottom: 32px;
+}
+
+.projects__item-top {
+    position: relative;
+}
+
+.projects__item-top {
+    margin-bottom: 32px;
+}
+
+.projects__item-top > span {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 144%;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #fff;
+}
+
+.projects__items-bottom {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 112px;
+}
+
+.projects__item {
+    position: relative;
+}
+
+.projects__item > span {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 164%;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+.projects .paragraph {
+    max-width: 750px;
+    margin: 0 auto 64px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.05em;
+    color: #222;
 }
 
 /* map */
@@ -117,16 +287,63 @@ button {
 .footer {
     padding-top: 91px;
     padding-bottom: 64px;
+    background: #316099;
 }
 
 .footer__text .h3-heading {
     max-width: 340px;
     width: 100%;
+    margin-bottom: 32px;
     text-align: left;
+    color: #fff;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
 }
 
 .footer__text .paragraph {
     max-width: 495px;
     width: 100%;
     text-align: left;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.footer__contacts {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.footer__item {
+    max-width: 280px;
+    display: flex;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+.footer__item .contact-number {
+    font-weight: 500;
+}
+
+.footer__copyright {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.05em;
+    color: #fff;
+    opacity: 0.4;
 }
