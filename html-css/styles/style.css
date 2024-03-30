@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -16,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 button {
     cursor: pointer;
     border: none;
@@ -24,9 +29,9 @@ button {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1180px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .h1-heading {
@@ -135,6 +140,11 @@ button {
     position: relative;
 }
 
+.home-content {
+    position: relative;
+    z-index: 1;
+}
+
 .home .home-bg {
     position: absolute;
     top: 0;
@@ -173,8 +183,9 @@ button {
 
 .what-we-do .cards {
     display: flex;
-    justify-content: space-between;
-    gap: 32px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .what-we-do .card {
@@ -191,6 +202,8 @@ button {
     position: absolute;
     top: 40px;
     left: 50%;
+    width: 172px;
+    height: 120px;
     transform: translateX(-50%);
 }
 
@@ -315,7 +328,6 @@ button {
 
 .footer__contacts {
     padding-top: 64px;
-    padding-bottom: 64px;
 }
 
 .footer__list {
@@ -346,4 +358,158 @@ button {
     letter-spacing: 0.05em;
     color: #fff;
     opacity: 0.4;
+}
+
+/* media */
+@media screen and (max-width: 768px) {
+    .home {
+        box-shadow: none;
+    }
+
+    .home .home-bg {
+        top: 180px;
+        width: 336px;
+        height: 292px;
+    }
+
+    .projects .paragraph {
+        max-width: 520px;
+    }
+
+    .projects__item > span {
+        top: 20px;
+        left: 20px;
+    }
+
+    .footer__content {
+        justify-content: center;
+    }
+
+    .footer__text .paragraph {
+        max-width: 336px;
+    }
+
+    .button-secondary {
+        width: 133px;
+        height: 31px;
+    }
+
+    .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__list {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer__item {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .h1-heading {
+        font-size: 32px;
+        letter-spacing: 0.04em;
+    }
+
+    .h3-heading {
+        font-size: 24px;
+    }
+
+    .button-primary {
+        width: 108px;
+        height: 27px;
+        font-size: 12px;
+    }
+
+    .header {
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+
+    .home {
+        padding-top: 4px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .home .h1-heading {
+        margin-bottom: 12px;
+    }
+
+    .home .paragraph {
+        margin-bottom: 32px;
+    }
+
+    .home-bg {
+        display: none;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .what-we-do .h3-heading {
+        margin-bottom: 32px;
+    }
+
+    .projects__item-top {
+        margin-bottom: 16px;
+    }
+
+    .projects__item-top > span {
+        top: 16px;
+        right: 16px;
+        font-size: 16px;
+    }
+
+    .projects__items-bottom {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .projects__item > span {
+        left: 16px;
+        font-size: 16px;
+    }
+
+    .projects__items-bottom {
+        margin-bottom: 64px;
+    }
+
+    .footer {
+        padding-top: 18px;
+        padding-bottom: 32px;
+    }
+
+
+    .footer__content {
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .footer__text {
+        margin-bottom: 40px;
+    }
+
+    .footer__text .h3-heading,
+    .footer__text .paragraph {
+        text-align: center;
+    }
+
+    .footer__contacts {
+        padding-top: 32px;
+    }
+
+    .footer__list {
+        margin-bottom: 32px;
+    }
+
+    .footer__copyright {
+        text-align: center;
+    }
 }

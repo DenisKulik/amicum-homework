@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Contacts</title>
 	<link rel="stylesheet" href="../styles/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <!-- Header -->
@@ -12,10 +13,10 @@
 		<nav class="nav">
 			<ul class="nav__list">
 				<li class="nav__item">
-					<a href="../index.html">Home</a>
+					<a href="../index.html"><img src="../img/home.svg" alt="home"></a>
 				</li>
 				<li class="nav__item">
-					<a href="#">Contacts</a>
+					<a href="#"><img src="../img/contacts.svg" alt="home"></a>
 				</li>
 			</ul>
 		</nav>
@@ -64,9 +65,9 @@
 	<!-- Map -->
 	<section class="contacts-map">
 		<div class="container">
-				<iframe
-					src="https://yandex.ru/map-widget/v1/?um=constructor%3A785a4d634b7f24c9bfba4e5bd1710e1f4244db438e546686e1b216e16a862ca2&amp;source=constructor"
-					width="100%" height="480" frameborder="0"></iframe>
+			<iframe
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3A785a4d634b7f24c9bfba4e5bd1710e1f4244db438e546686e1b216e16a862ca2&amp;source=constructor"
+				width="100%" height="480" frameborder="0"></iframe>
 		</div>
 	</section>
 </main>
@@ -83,13 +84,23 @@
 		</div>
 		<hr>
 		<div class="footer__contacts">
-			<h4 class="h4-heading">Contact List</h4>
-			<ul class="footer__list">
-				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-				<li>+7-812-7313-4321</li>
-				<li>hello.site@gmail.com</li>
-			</ul>
-			<span>2024 All rights reserved.</span>
+			<div>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<span class="contact-number">1.</span>
+						<span class="contact-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+					</li>
+					<li class="footer__item">
+						<span class="contact-number">2.</span>
+						<span class="contact-item">+7-812-7313-4321</span>
+					</li>
+					<li class="footer__item">
+						<span class="contact-number">3.</span>
+						<span class="contact-item">hello.site@gmail.com.</span>
+					</li>
+				</ul>
+				<p class="footer__copyright">2024 All rights reserved.</p>
+			</div>
 		</div>
 	</div>
 </footer>
