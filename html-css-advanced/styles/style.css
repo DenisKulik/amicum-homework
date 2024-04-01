@@ -35,6 +35,99 @@ button {
   padding: 0 15px;
 }
 
+.title {
+  font-weight: 400;
+  font-size: 30px;
+  color: #222;
+}
+
+.goods-item {
+  max-width: 360px;
+  width: 100%;
+}
+.goods-item__img {
+  position: relative;
+  object-fit: cover;
+}
+.goods-item__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+}
+.goods-item .overlay {
+  visibility: hidden;
+}
+.goods-item__content {
+  padding: 20px 12px;
+  background-color: #f8f8f8;
+}
+.goods-item__title {
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000;
+}
+.goods-item__description {
+  margin-bottom: 18px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #5d5d5d;
+}
+.goods-item__price {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f16d7f;
+}
+.goods-item:hover .goods-item__btn {
+  visibility: visible;
+}
+.goods-item:hover .overlay {
+  visibility: visible;
+}
+
+.add-to-cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  width: 139px;
+  height: 44px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+  border: 1px solid #fff;
+}
+.add-to-cart-btn > img {
+  max-width: 26px;
+}
+
+.primary-button {
+  display: block;
+  width: 212px;
+  height: 48px;
+  border: 1px solid #f26376;
+  color: #f26376;
+  cursor: pointer;
+  z-index: 2;
+  background: transparent;
+}
+.primary-button:hover {
+  background-color: #f26376;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  opacity: 0.86;
+  background-color: #3A3838;
+}
+
 /* header */
 .header {
   height: 75px;
@@ -150,6 +243,35 @@ button {
 .suggestion .suggestion-card-block {
   background: url("../img/suggestion/suggestion-block.jpg") center center no-repeat;
   background-size: cover;
+}
+
+/* fetured */
+.fetured {
+  padding-bottom: 95px;
+}
+.fetured__header {
+  text-align: center;
+}
+.fetured__title {
+  margin-bottom: 6px;
+}
+.fetured__text {
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9f9f9f;
+}
+.fetured__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 48px;
+}
+.fetured__cards .goods-item {
+  flex: 1 1 33%;
+}
+.fetured .primary-button {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
