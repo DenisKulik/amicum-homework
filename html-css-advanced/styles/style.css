@@ -17,10 +17,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-}
-
 button {
   cursor: pointer;
   border: none;
@@ -43,11 +39,11 @@ button {
 
 .goods-item {
   max-width: 360px;
-  width: 100%;
 }
 .goods-item__img {
   position: relative;
   object-fit: cover;
+  margin-bottom: -4px;
 }
 .goods-item__btn {
   position: absolute;
@@ -245,33 +241,66 @@ button {
   background-size: cover;
 }
 
-/* fetured */
-.fetured {
+/* products */
+.products {
   padding-bottom: 95px;
 }
-.fetured__header {
+.products__header {
   text-align: center;
 }
-.fetured__title {
+.products__title {
   margin-bottom: 6px;
 }
-.fetured__text {
+.products__text {
   margin-bottom: 48px;
   font-weight: 400;
   font-size: 14px;
   color: #9f9f9f;
 }
-.fetured__cards {
+.products__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 48px;
 }
-.fetured__cards .goods-item {
+.products__cards .goods-item {
   flex: 1 1 33%;
 }
-.fetured .primary-button {
+.products .primary-button {
   margin: 0 auto;
+}
+
+/* feature */
+.feature {
+  min-height: 341px;
+  padding-top: 48px;
+  padding-bottom: 64px;
+  background-color: #222224;
+}
+.feature__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.feature__item {
+  flex: 1 1 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  color: #fff;
+}
+.feature__title {
+  font-weight: 400;
+  font-size: 19px;
+  color: #fbfbfb;
+}
+.feature__text {
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  color: #fbfbfb;
 }
 
 /*# sourceMappingURL=style.css.map */
