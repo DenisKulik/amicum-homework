@@ -384,4 +384,34 @@ button {
   transform: translateX(-25px);
 }
 
+/* footer */
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #222224;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copy {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fbfbfb;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.footer__social-link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -440,3 +440,36 @@ button {
   }
 }
 
+/* footer */
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #222224;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copy {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fbfbfb;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__social-link {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+}
