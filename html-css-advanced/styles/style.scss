@@ -113,7 +113,9 @@ button {
 }
 
 .primary-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 212px;
   height: 48px;
   border: 1px solid #f26376;
