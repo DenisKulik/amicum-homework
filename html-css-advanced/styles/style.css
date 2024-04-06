@@ -57,6 +57,7 @@ button {
   visibility: hidden;
 }
 .goods-item__content {
+  display: block;
   padding: 20px 12px;
   background-color: #f8f8f8;
 }
