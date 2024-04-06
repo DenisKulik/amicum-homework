@@ -311,6 +311,54 @@ button {
   .primary-button {
     margin: 0 auto;
   }
+
+  .pagination {
+    margin: 0 auto;
+    max-width: 283px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+
+    &__pages {
+      display: flex;
+      align-items: center;
+    }
+
+    &__page {
+      font-weight: 300;
+      font-size: 16px;
+      color: #c4c4c4;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &.active {
+        color: #ef5b70;
+      }
+    }
+
+    &__dots {
+      margin-left: -15px;
+      font-size: 16px;
+      color: #c4c4c4;
+    }
+
+    &__prev,
+    &__next {
+      cursor: pointer;
+    }
+
+    &__next {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 /* feature */
@@ -473,5 +521,78 @@ button {
     align-items: center;
     justify-content: center;
     background-color: white;
+  }
+}
+
+/* page-title */
+.page-title {
+  padding: 60px 0;
+  background-color: #F1E4E6;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    color: #f16d7f;
+  }
+
+  &__link,
+  &__slash {
+    font-weight: 300;
+    font-size: 14px;
+    color: #636363;
+  }
+
+  &__active {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f16d7f;
+  }
+}
+
+/* filters */
+.filters {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &__filter {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6f6e6e;
+  }
+
+  &__sort-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
   }
 }
