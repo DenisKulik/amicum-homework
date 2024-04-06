@@ -597,3 +597,118 @@ button {
     cursor: pointer;
   }
 }
+
+/* product */
+.product {
+  .slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f7f7f7;;
+
+    &__img {
+      object-fit: cover;
+    }
+
+    .slider__btn {
+      position: absolute;
+      top: 50%;
+      padding: 8px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      background-color: #E1E1E1;
+      transform: translate(-50%, -50%);
+
+      &.prev {
+        left: 10px;
+      }
+
+      &.next {
+        right: 0;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+/* product-info */
+.product-info {
+  margin-bottom: 50px;
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0;
+    z-index: 1;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    transform: translateY(-50px);
+
+    &__heading {
+      margin-bottom: 12px;
+      font-weight: 300;
+      font-size: 14px;
+      color: #f16d7f;
+    }
+
+    &__separator {
+      width: 63px;
+      height: 3px;
+      background-color: #ef5b70;
+      margin-bottom: 12px;
+    }
+
+    &__title {
+      margin-bottom: 48px;
+      font-weight: 300;
+      font-size: 18px;
+      color: #4d4d4d;
+    }
+
+    &__text {
+      max-width: 575px;
+      margin-bottom: 32px;
+      font-weight: 300;
+      font-size: 14px;
+      text-align: center;
+      color: #5e5e5e;
+    }
+
+    &__price {
+      margin-bottom: 64px;
+      font-weight: 300;
+      font-size: 24px;
+      color: #ef5b70;
+    }
+
+    &__separator-grey {
+      max-width: 642px;
+      width: 100%;
+      margin-bottom: 64px;
+      height: 1px;
+      background-color: #EAEAEA;
+    }
+
+    &__filters {
+      margin-bottom: 48px;
+    }
+
+    .primary-button {
+      svg {
+        margin-right: 20px;
+      }
+
+      &:hover {
+        svg {
+          stroke: white;
+        }
+      }
+    }
+  }
+}

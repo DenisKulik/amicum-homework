@@ -520,4 +520,99 @@ button {
   cursor: pointer;
 }
 
+/* product */
+.product .slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f7f7f7;
+}
+.product .slider__img {
+  object-fit: cover;
+}
+.product .slider .slider__btn {
+  position: absolute;
+  top: 50%;
+  padding: 8px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: #E1E1E1;
+  transform: translate(-50%, -50%);
+}
+.product .slider .slider__btn.prev {
+  left: 10px;
+}
+.product .slider .slider__btn.next {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+/* product-info */
+.product-info {
+  margin-bottom: 50px;
+}
+.product-info .product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0;
+  z-index: 1;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  transform: translateY(-50px);
+}
+.product-info .product-card__heading {
+  margin-bottom: 12px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #f16d7f;
+}
+.product-info .product-card__separator {
+  width: 63px;
+  height: 3px;
+  background-color: #ef5b70;
+  margin-bottom: 12px;
+}
+.product-info .product-card__title {
+  margin-bottom: 48px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #4d4d4d;
+}
+.product-info .product-card__text {
+  max-width: 575px;
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #5e5e5e;
+}
+.product-info .product-card__price {
+  margin-bottom: 64px;
+  font-weight: 300;
+  font-size: 24px;
+  color: #ef5b70;
+}
+.product-info .product-card__separator-grey {
+  max-width: 642px;
+  width: 100%;
+  margin-bottom: 64px;
+  height: 1px;
+  background-color: #EAEAEA;
+}
+.product-info .product-card__filters {
+  margin-bottom: 48px;
+}
+.product-info .product-card .primary-button svg {
+  margin-right: 20px;
+}
+.product-info .product-card .primary-button:hover svg {
+  stroke: white;
+}
+
 /*# sourceMappingURL=style.css.map */
