@@ -890,3 +890,73 @@ button {
     background-color: #e2e2e2;
   }
 }
+
+/* registration */
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+  }
+
+  &__form {
+    max-width: 360px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #222;
+  }
+
+  .item-form {
+    margin-bottom: 20px;
+  }
+
+  &__gender {
+    margin-bottom: 33px;
+    font-weight: 300;
+    font-size: 11px;
+    color: #000;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__password-info {
+    margin-bottom: 39px;
+    font-weight: 300;
+    font-size: 13px;
+    color: #b1b1b1;
+  }
+
+  .third-button {
+    max-width: 167px;
+  }
+
+  .perks {
+    &__title,
+    &__text {
+      font-weight: 300;
+      font-size: 20px;
+      color: #000;
+      margin-bottom: 22px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__item {
+      font-weight: 300;
+      font-size: 20px;
+      color: #000;
+    }
+  }
+}
